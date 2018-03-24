@@ -141,6 +141,15 @@ libebicoin_wallet_a_SOURCES = \
 
 libebicoin_common_a_SOURCES = \
   hash.cpp \
+  hash/yescrypt/yescrypt.h \
+  hash/yescrypt/yescrypt.c \
+  hash/yescrypt/sha256.h \
+  hash/yescrypt/sha256_c.h \
+  hash/yescrypt/yescrypt-best_c.h \
+  hash/yescrypt/sysendian.h \
+  hash/yescrypt/yescrypt-platform_c.h \
+  hash/yescrypt/yescrypt-opt_c.h \
+  hash/yescrypt/yescrypt-simd_c.h \
   key.cpp \
   netbase.cpp \
   protocol.cpp \
@@ -221,4 +230,10 @@ endif
 
 if ENABLE_QT_TESTS
 include Makefile.qttest.include
+endif
+
+if TARGET_DARWIN
+hash/yescrypt/yescrypt.o: CFLAGS += -O3 -msse4.1 -funroll-loops -fomit-frame-pointer
+else
+hash/yescrypt/yescrypt.o: CFLAGS += -msse4.1 -fPIC
 endif

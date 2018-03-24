@@ -1,4 +1,6 @@
 # Copyright (c) 2009-2010 Satoshi Nakamoto
+# Copyright (c) 2011-2018 The Peercoin developers
+# Copyright (c) 2018      The Ebicoin developers
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -36,6 +38,7 @@ LIBS= \
 DEFS=-D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -DBOOST_SPIRIT_THREADSAFE -DHAVE_WORKING_BOOST_SLEEP_FOR
 DEBUGFLAGS=-g
 xCXXFLAGS=-O2 -w -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS) $(CXXFLAGS)
+xCFLAGS=-O2 -w -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS) $(CFLAGS)
 # enable: ASLR, DEP and large address aware
 xLDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat $(LDFLAGS)
 ifeq (${HOST}, i686-w64-mingw32)
@@ -97,6 +100,7 @@ OBJS= \
     obj/kernel.o \
     obj/checkpointsync.o \
     obj/hash.o \
+    obj/hash/yescrypt/yescrypt.o \
     obj/bloom.o \
     obj/leveldbwrapper.o \
     obj/txdb.o
@@ -116,6 +120,9 @@ DEFS += -DHAVE_BUILD_INFO
 obj/%.o: %.cpp $(HEADERS)
 	$(CXX) -c $(xCXXFLAGS) -o $@ $<
 
+obj/hash/yescrypt/%.o: hash/yescrypt/%.c $(HEADERS)
+	$(CC) -c $(xCFLAGS) -o $@ $<
+
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
 
 obj-test/%.o: test/%.cpp $(HEADERS)
@@ -127,8 +134,10 @@ test_bitcoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 
 clean:
 	-rm -f obj/*.o
+    -rm -f obj/hash/yescrypt/*.o
 	-rm -f ebicoind.exe
 	-rm -f obj-test/*.o
+    -rm -f obj/hash/yescrypt/*.P
 	-rm -f test_bitcoin.exe
 	-rm -f obj/build.h
 	cd leveldb && TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) clean && cd ..

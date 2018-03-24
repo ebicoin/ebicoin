@@ -1,6 +1,7 @@
 # -*- mode: Makefile; -*-
 # Copyright (c) 2009-2010 Satoshi Nakamoto
 # Copyright (c) 2011-2018 The Peercoin developers
+# Copyright (c) 2018      The Ebicoin developers
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -112,6 +113,7 @@ OBJS= \
     obj/kernel.o \
     obj/checkpointsync.o \
     obj/hash.o \
+    obj/hash/yescrypt/yescrypt.o \
     obj/bloom.o \
     obj/noui.o \
     obj/leveldbwrapper.o \
@@ -162,6 +164,13 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
+obj/hash/yescrypt/%.o: hash/yescrypt/%.c
+	$(CC) -c $(CFLAGS) -MMD -MF $(@:%.o=%.d) -o $@ $<
+	@cp $(@:%.o=%.d) $(@:%.o=%.P); \
+	  sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$$//' \
+	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
+	  rm -f $(@:%.o=%.d)
+
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
 
 obj-test/%.o: test/%.cpp
@@ -175,11 +184,12 @@ test_ebicoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) $(TESTLIBS)
 
 clean:
-	-rm -f test_ebicoin
-	-rm -f ebicoind
+	-rm -f ebicoind test_ebicoin
 	-rm -f obj/*.o
+    -rm -f obj/hash/yescrypt/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P
+    -rm -f obj/hash/yescrypt/*.P
 	-rm -f obj-test/*.P
 	-rm -f obj/build.h
 	-cd leveldb && $(MAKE) clean || true
