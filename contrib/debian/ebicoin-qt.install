@@ -1,0 +1,6 @@
+usr/local/bin/ebicoin-qt usr/bin
+share/pixmaps/ebicoin32.xpm usr/share/pixmaps
+share/pixmaps/ebicoin16.xpm usr/share/pixmaps
+share/pixmaps/ebicoin128.png usr/share/pixmaps
+debian/ebicoin-qt.desktop usr/share/applications
+debian/ebicoin-qt.protocol usr/share/kde4/services/

@@ -17,14 +17,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Peercoin"
-            VALUE "FileDescription",    "Peercoind (OSS daemon/client for Peercoin)"
+            VALUE "CompanyName",        "Ebicoin"
+            VALUE "FileDescription",    "Ebicoind (OSS daemon/client for Ebicoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "peercoind"
+            VALUE "InternalName",       "ebicoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "peercoind.exe"
-            VALUE "ProductName",        "Peercoind"
+            VALUE "OriginalFilename",   "ebicoind.exe"
+            VALUE "ProductName",        "Ebicoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

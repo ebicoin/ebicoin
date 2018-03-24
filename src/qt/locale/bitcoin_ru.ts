@@ -4,12 +4,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Peercoin</source>
+        <source>About Ebicoin</source>
         <translation>&amp;О Пиркойн</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Peercoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Ebicoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Пиркойн&lt;/b&gt; версия</translation>
     </message>
     <message>
@@ -34,7 +34,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Peercoin developers</source>
+        <source>The Ebicoin developers</source>
         <translation>Разработчики Пиркойн</translation>
     </message>
 </context>
@@ -67,7 +67,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Peercoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Ebicoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Это Ваши адреса для получения платежей. Вы можете дать разные адреса отправителям, чтобы отслеживать, кто именно вам платит.</translation>
     </message>
     <message>
@@ -82,7 +82,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Peercoin address</source>
+        <source>Sign a message to prove you own a Ebicoin address</source>
         <translation>Подписать сообщение, чтобы доказать владение адресом Пиркойн</translation>
     </message>
     <message>
@@ -107,7 +107,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Peercoin address</source>
+        <source>Verify a message to ensure it was signed with a specified Ebicoin address</source>
         <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Пиркойн</translation>
     </message>
     <message>
@@ -122,7 +122,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Peercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Ebicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Ваши адреса для получения средств. Совет: проверьте сумму и адрес назначения перед переводом.</translation>
     </message>
     <message>
@@ -248,7 +248,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEERCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR EBICOINS&lt;/b&gt;!</source>
         <translation>Внимание: если вы зашифруете бумажник и потеряете пароль, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ МОНЕТЫ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -275,7 +275,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
+        <source>Ebicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ebicoins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши монеты от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -374,7 +374,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Peercoin</source>
+        <source>Show information about Ebicoin</source>
         <translation>Показать информацию о Пиркойн</translation>
     </message>
     <message>
@@ -419,12 +419,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Peercoin address</source>
+        <source>Send coins to a Ebicoin address</source>
         <translation>Отправить монеты на указанный адрес Пиркойн</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Peercoin</source>
+        <source>Modify configuration options for Ebicoin</source>
         <translation>Изменить параметры конфигурации Пиркойн</translation>
     </message>
     <message>
@@ -455,7 +455,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Peercoin</source>
+        <source>Ebicoin</source>
         <translation>Пиркойн</translation>
     </message>
     <message>
@@ -480,7 +480,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Peercoin</source>
+        <source>&amp;About Ebicoin</source>
         <translation>&amp;О Пиркойн</translation>
     </message>
     <message>
@@ -500,12 +500,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Peercoin addresses to prove you own them</source>
+        <source>Sign messages with your Ebicoin addresses to prove you own them</source>
         <translation>Подписать сообщения вашим адресом Пиркойн, чтобы доказать, что вы им владеете</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Peercoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Ebicoin addresses</source>
         <translation>Проверить сообщения, чтобы удостовериться, что они были подписаны определённым адресом Пиркойн</translation>
     </message>
     <message>
@@ -536,12 +536,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Peercoin client</source>
+        <source>Ebicoin client</source>
         <translation>Пиркойн клиент</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Peercoin network</source>
+        <source>%n active connection(s) to Ebicoin network</source>
         <translation><numerusform>%n активное соединение с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform></translation>
     </message>
     <message>
@@ -656,7 +656,7 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Peercoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Ebicoin address or malformed URI parameters.</source>
         <translation>Не удалось обработать URI! Это может быть связано с неверным адресом Пиркойн или неправильными параметрами URI.</translation>
     </message>
     <message>
@@ -671,7 +671,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Peercoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Ebicoin can no longer continue safely and will quit.</source>
         <translation>Произошла неисправимая ошибка. Пиркойн не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
@@ -737,7 +737,7 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Ebicoin address.</source>
         <translation>Введённый адрес &quot;%1&quot; не является правильным Пиркойн-адресом.</translation>
     </message>
     <message>
@@ -756,8 +756,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Peercoin-Qt</source>
-        <translation>Peercoin-Qt</translation>
+        <source>Ebicoin-Qt</source>
+        <translation>Ebicoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -809,7 +809,7 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 PPC fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
+        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 TAKO fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -819,7 +819,7 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Peercoin after logging in to the system.</source>
+        <source>Automatically start Ebicoin after logging in to the system.</source>
         <translation>Автоматически запускать Пиркойн после входа в систему</translation>
     </message>
     <message>
@@ -829,7 +829,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Peercoin on system login</source>
+        <source>&amp;Start Ebicoin on system login</source>
         <translation>&amp;Запускать Пиркойн при входе в систему</translation>
     </message>
     <message>
@@ -854,7 +854,7 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Peercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Ebicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Автоматически открыть порт для Пиркойн-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
@@ -864,7 +864,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Peercoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Ebicoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Подключаться к сети Пиркойн через прокси SOCKS (например, при подключении через Tor).</translation>
     </message>
     <message>
@@ -939,7 +939,7 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Peercoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ebicoin.</source>
         <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска Пиркойн.</translation>
     </message>
     <message>
@@ -954,7 +954,7 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Peercoin addresses in the transaction list or not.</source>
+        <source>Whether to show Ebicoin addresses in the transaction list or not.</source>
         <translation>Показывать ли адреса Пиркойн в списке транзакций.</translation>
     </message>
     <message>
@@ -1006,7 +1006,7 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Peercoin.</source>
+        <source>This setting will take effect after restarting Ebicoin.</source>
         <translation>Эта настройка вступит в силу после перезапуска Пиркойн</translation>
     </message>
     <message>
@@ -1025,7 +1025,7 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Peercoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ebicoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью Пиркойн после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
@@ -1079,7 +1079,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <source>Cannot start ebicoin: click-to-pay handler</source>
         <translation>Не удаётся запустить Пиркойн: обработчик click-to-pay</translation>
     </message>
 </context>
@@ -1229,8 +1229,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Peercoin-Qt help message to get a list with possible Peercoin command-line options.</source>
-        <translation>Показать помощь по Peercoin-Qt, чтобы получить список доступных параметров командной строки.</translation>
+        <source>Show the Ebicoin-Qt help message to get a list with possible Ebicoin command-line options.</source>
+        <translation>Показать помощь по Ebicoin-Qt, чтобы получить список доступных параметров командной строки.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1249,12 +1249,12 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Peercoin - Debug window</source>
+        <source>Ebicoin - Debug window</source>
         <translation>Пиркойн - Окно отладки</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Peercoin Core</source>
+        <source>Ebicoin Core</source>
         <translation>Ядро Пиркойн</translation>
     </message>
     <message>
@@ -1264,7 +1264,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Peercoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Ebicoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Открыть отладочный лог-файл Пиркойн из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
     </message>
     <message>
@@ -1274,7 +1274,7 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Peercoin RPC console.</source>
+        <source>Welcome to the Ebicoin RPC console.</source>
         <translation>Добро пожаловать в RPC-консоль Пиркойн.</translation>
     </message>
     <message>
@@ -1458,7 +1458,7 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Peercoin address</source>
+        <source>Enter a Ebicoin address</source>
         <translation>Введите Пиркойн-адрес (например 1LA5FtQhnnWnkK6zjFfutR7Stiit4wKd63)</translation>
     </message>
 </context>
@@ -1523,7 +1523,7 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Peercoin address</source>
+        <source>Sign the message to prove you own this Ebicoin address</source>
         <translation>Подписать сообщение, чтобы доказать владение адресом Пиркойн</translation>
     </message>
     <message>
@@ -1559,7 +1559,7 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Peercoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Ebicoin address</source>
         <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Пиркойн</translation>
     </message>
     <message>
@@ -1575,7 +1575,7 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Peercoin address</source>
+        <source>Enter a Ebicoin address</source>
         <translation>Введите адрес Пиркойн (напр. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
@@ -1585,7 +1585,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Peercoin signature</source>
+        <source>Enter Ebicoin signature</source>
         <translation>Введите подпись Пиркойн</translation>
     </message>
     <message>
@@ -1659,7 +1659,7 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Peercoin developers</source>
+        <source>The Ebicoin developers</source>
         <translation>Разработчики Пиркойн</translation>
     </message>
     <message>
@@ -2197,7 +2197,7 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Peercoin version</source>
+        <source>Ebicoin version</source>
         <translation>Версия</translation>
     </message>
     <message>
@@ -2207,8 +2207,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Отправить команду на -server или peercoind</translation>
+        <source>Send command to -server or ebicoind</source>
+        <translation>Отправить команду на -server или ebicoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2228,13 +2228,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: peercoin.conf)</translation>
+        <source>Specify configuration file (default: ebicoin.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: ebicoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Задать pid-файл (по умолчанию: peercoin.pid)</translation>
+        <source>Specify pid file (default: ebicoind.pid)</source>
+        <translation>Задать pid-файл (по умолчанию: ebicoin.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2311,24 +2311,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=ebicoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Ebicoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, вы должны установить опцию rpcpassword в конфигурационном файле:
  %s
 Рекомендуется использовать следующий случайный пароль:
-rpcuser=peercoinrpc
+rpcuser=ebicoinrpc
 rpcpassword=%s
 (вам не нужно запоминать этот пароль)
 Имя и пароль ДОЛЖНЫ различаться.
 Если файл не существует, создайте его и установите права доступа только для владельца, только для чтения.
 Также рекомендуется включить alertnotify для оповещения о проблемах;
-Например: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo.com
+Например: alertnotify=echo %%s | mail -s &quot;Ebicoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2343,7 +2343,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Peercoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Ebicoin is probably already running.</source>
         <translation>Не удаётся установить блокировку на каталог данных %s.  Возможно, Пиркойн уже работает.</translation>
     </message>
     <message>
@@ -2388,7 +2388,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Peercoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Ebicoin will not work properly.</source>
         <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, Пиркойн будет работать некорректно.</translation>
     </message>
     <message>
@@ -2829,12 +2829,12 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Peercoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Ebicoin</source>
         <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию Пиркойн</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Peercoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Ebicoin to complete</source>
         <translation>Необходимо перезаписать бумажник, перезапустите Пиркойн для завершения операции.</translation>
     </message>
     <message>
@@ -2894,7 +2894,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Peercoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Ebicoin is probably already running.</source>
         <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, Пиркойн уже работает.</translation>
     </message>
     <message>

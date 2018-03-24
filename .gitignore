@@ -11,12 +11,12 @@ bin
 *.exe
 src/*.exe
 src/*/*.exe
-src/peercoin
-src/peercoin-cli
-src/peercoind
-src/test_peercoin
-src/test/test_peercoin
-src/qt/test/test_peercoin-qt
+src/ebicoin
+src/ebicoin-cli
+src/ebicoind
+src/test_ebicoin
+src/test/test_ebicoin
+src/qt/test/test_ebicoin-qt
 
 # autoreconf
 Makefile.in
@@ -69,8 +69,8 @@ src/qt/res/.dirstamp
 *.orig
 *.o
 *.patch
-.ppcoin
-.peercoin
+.ebicoin
+.ebicoin
 *.a
 *.pb.cc
 *.pb.h
@@ -82,17 +82,17 @@ src/qt/res/.dirstamp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-ppcoin-qt
-peercoin-qt
-PPCoin-Qt.app
-Peercoin-Qt.app
+ebicoin-qt
+ebicoin-qt
+Ebicoin-Qt.app
+Ebicoin-Qt.app
 .qmake.stash
-peercoin-qt_plugin_import.cpp
+ebicoin-qt_plugin_import.cpp
 
 # Unit-tests
 Makefile.test
-ppcoin-qt_test
-peercoin-qt_test
+ebicoin-qt_test
+ebicoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -123,7 +123,7 @@ qa/pull-tester/run-bitcoind-for-test.sh
 qa/pull-tester/build-tests.sh
 
 !src/leveldb-*/Makefile
-peercoin-qt
+ebicoin-qt
 
 #db4/
 db4/

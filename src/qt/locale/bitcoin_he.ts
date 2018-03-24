@@ -4,12 +4,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Peercoin</source>
+        <source>About Ebicoin</source>
         <translation>אודות ביטקוין</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Peercoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Ebicoin&lt;/b&gt; version</source>
         <translation>גרסת &lt;b&gt;ביטקוין&lt;/b&gt;</translation>
     </message>
     <message>
@@ -34,7 +34,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Peercoin developers</source>
+        <source>The Ebicoin developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -67,7 +67,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Peercoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Ebicoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>אלה כתובת הביטקוין שלך עבור קבלת תשלומים. ייתכן ותרצה לתת כתובת שונה לכל שולח כדי שתוכל לעקוב אחר מי משלם לך.</translation>
     </message>
     <message>
@@ -82,7 +82,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Peercoin address</source>
+        <source>Sign a message to prove you own a Ebicoin address</source>
         <translation>חתום על הודעה בכדי להוכיח כי אתה הבעלים של כתובת ביטקוין.</translation>
     </message>
     <message>
@@ -107,7 +107,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Peercoin address</source>
+        <source>Verify a message to ensure it was signed with a specified Ebicoin address</source>
         <translation>אמת הודעה בכדי להבטיח שהיא נחתמה עם כתובת ביטקוין מסוימת.</translation>
     </message>
     <message>
@@ -122,7 +122,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Peercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Ebicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>אלה כתובת הביטקוין שלך עבור שליחת תשלומים. תמיד בדוק את מספר ואת כתובות מקבלי התשלומים לפני שליחת מטבעות.</translation>
     </message>
     <message>
@@ -248,7 +248,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEERCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR EBICOINS&lt;/b&gt;!</source>
         <translation>אזהרה: אם אתה מצפין את הארנק ומאבד את הסיסמא, אתה &lt;b&gt;תאבד את כל הביטקוינים שלך&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -275,7 +275,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
+        <source>Ebicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ebicoins from being stolen by malware infecting your computer.</source>
         <translation>ביטקוין ייסגר עכשיו כדי להשלים את תהליך ההצפנה. זכור שהצפנת הארנק שלך אינו יכול להגן באופן מלא על הביטקוינים שלך מתוכנות זדוניות המושתלות על המחשב.</translation>
     </message>
     <message>
@@ -374,7 +374,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Peercoin</source>
+        <source>Show information about Ebicoin</source>
         <translation>הצג מידע על ביטקוין</translation>
     </message>
     <message>
@@ -419,12 +419,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Peercoin address</source>
+        <source>Send coins to a Ebicoin address</source>
         <translation>שלח מטבעות לכתובת ביטקוין</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Peercoin</source>
+        <source>Modify configuration options for Ebicoin</source>
         <translation>שנה אפשרויות תצורה עבור ביטקוין</translation>
     </message>
     <message>
@@ -455,7 +455,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Peercoin</source>
+        <source>Ebicoin</source>
         <translation>ביטקוין</translation>
     </message>
     <message>
@@ -480,7 +480,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Peercoin</source>
+        <source>&amp;About Ebicoin</source>
         <translation>אודות ביטקוין</translation>
     </message>
     <message>
@@ -500,12 +500,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Peercoin addresses to prove you own them</source>
+        <source>Sign messages with your Ebicoin addresses to prove you own them</source>
         <translation>חתום על הודעות עם כתובות הביטקוין שלך כדי להוכיח שהן בבעלותך</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Peercoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Ebicoin addresses</source>
         <translation>אמת הודעות כדי להבטיח שהן נחתמו עם כתובת ביטקוין מסוימות</translation>
     </message>
     <message>
@@ -536,12 +536,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Peercoin client</source>
+        <source>Ebicoin client</source>
         <translation>תוכנת ביטקוין</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Peercoin network</source>
+        <source>%n active connection(s) to Ebicoin network</source>
         <translation><numerusform>חיבור פעיל אחד לרשת הביטקוין</numerusform><numerusform>%n חיבורים פעילים לרשת הביטקוין</numerusform></translation>
     </message>
     <message>
@@ -655,7 +655,7 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Peercoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Ebicoin address or malformed URI parameters.</source>
         <translation>לא ניתן לנתח URI! זה יכול להיגרם כתוצאה מכתובת ביטקוין לא תקינה או פרמטרי URI חסרי צורה תקינה.</translation>
     </message>
     <message>
@@ -670,7 +670,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Peercoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Ebicoin can no longer continue safely and will quit.</source>
         <translation>שגיאה סופנית אירעה. ביטקוין אינו יכול להמשיך לפעול בבטחה ולכן ייסגר.</translation>
     </message>
 </context>
@@ -736,7 +736,7 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Ebicoin address.</source>
         <translation>הכתובת שהוכנסה &quot;%1&quot; אינה כתובת ביטקוין תקינה.</translation>
     </message>
     <message>
@@ -755,8 +755,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Peercoin-Qt</source>
-        <translation>Peercoin-Qt</translation>
+        <source>Ebicoin-Qt</source>
+        <translation>Ebicoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -808,7 +808,7 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 PPC fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
+        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 TAKO fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -818,7 +818,7 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Peercoin after logging in to the system.</source>
+        <source>Automatically start Ebicoin after logging in to the system.</source>
         <translation>הפעל את ביטקוין באופן עצמאי לאחר התחברות למערכת.</translation>
     </message>
     <message>
@@ -828,7 +828,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Peercoin on system login</source>
+        <source>&amp;Start Ebicoin on system login</source>
         <translation>התחל את ביטקוין בעת התחברות למערכת</translation>
     </message>
     <message>
@@ -853,7 +853,7 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Peercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Ebicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>פתח את פורט ביטקוין בנתב באופן אוטומטי. עובד רק אם UPnP מאופשר ונתמך ע&quot;י הנתב.</translation>
     </message>
     <message>
@@ -863,7 +863,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Peercoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Ebicoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>התחבר לרשת הביטקוין דרך פרוקסי SOCKS (למשל בעת התחברות דרך Tor).</translation>
     </message>
     <message>
@@ -938,7 +938,7 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Peercoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ebicoin.</source>
         <translation>ניתן לקבוע כאן את שפת ממשק המשתמש. הגדרה זו תחול לאחר הפעלה מחדש של ביטקוין.</translation>
     </message>
     <message>
@@ -953,7 +953,7 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Peercoin addresses in the transaction list or not.</source>
+        <source>Whether to show Ebicoin addresses in the transaction list or not.</source>
         <translation>האם להציג כתובות ביטקוין ברשימת הפעולות או לא.</translation>
     </message>
     <message>
@@ -1005,7 +1005,7 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Peercoin.</source>
+        <source>This setting will take effect after restarting Ebicoin.</source>
         <translation>הגדרה זו תחול לאחר הפעלה מחדש של ביטקוין.</translation>
     </message>
     <message>
@@ -1024,7 +1024,7 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Peercoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ebicoin network after a connection is established, but this process has not completed yet.</source>
         <translation>המידע המוצג עשוי להיות מיושן. הארנק שלך מסתנכרן באופן אוטומטי עם רשת הביטקוין לאחר כינון חיבור, אך התהליך טרם הסתיים.</translation>
     </message>
     <message>
@@ -1078,7 +1078,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <source>Cannot start ebicoin: click-to-pay handler</source>
         <translation>לא ניתן להתחיל את ביטקוין: מפעיל לחץ-לתשלום </translation>
     </message>
 </context>
@@ -1228,8 +1228,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Peercoin-Qt help message to get a list with possible Peercoin command-line options.</source>
-        <translation>הצג את הודעה העזרה של peercoin-qt כדי לקבל רשימה של אפשרויות שורת פקודה של ביטקוין.</translation>
+        <source>Show the Ebicoin-Qt help message to get a list with possible Ebicoin command-line options.</source>
+        <translation>הצג את הודעה העזרה של ebicoin-qt כדי לקבל רשימה של אפשרויות שורת פקודה של ביטקוין.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1248,12 +1248,12 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Peercoin - Debug window</source>
+        <source>Ebicoin - Debug window</source>
         <translation>ביטקוין - חלון ניפוי</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Peercoin Core</source>
+        <source>Ebicoin Core</source>
         <translation>ליבת ביטקוין</translation>
     </message>
     <message>
@@ -1263,7 +1263,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Peercoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Ebicoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>פתח את קובץ יומן הניפוי מתיקיית הנתונים הנוכחית. זה עשוי לקחת מספר שניות עבור קובצי יומן גדולים.</translation>
     </message>
     <message>
@@ -1273,7 +1273,7 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Peercoin RPC console.</source>
+        <source>Welcome to the Ebicoin RPC console.</source>
         <translation>ברוכים הבאים ללוח בקרת RPC של ביטקוין</translation>
     </message>
     <message>
@@ -1457,7 +1457,7 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Peercoin address</source>
+        <source>Enter a Ebicoin address</source>
         <translation>הכנס כתובת ביטקוין (למשל 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
@@ -1522,7 +1522,7 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Peercoin address</source>
+        <source>Sign the message to prove you own this Ebicoin address</source>
         <translation>חתום על ההודעה כדי להוכיח שכתובת הביטקוין הזו בבעלותך.</translation>
     </message>
     <message>
@@ -1558,7 +1558,7 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Peercoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Ebicoin address</source>
         <translation>אמת את ההודעה כדי להבטיח שהיא נחתמה עם כתובת הביטקוין הנתונה</translation>
     </message>
     <message>
@@ -1574,7 +1574,7 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Peercoin address</source>
+        <source>Enter a Ebicoin address</source>
         <translation>הכנס כתובת ביטקוין (למשל 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
@@ -1584,7 +1584,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Peercoin signature</source>
+        <source>Enter Ebicoin signature</source>
         <translation>הכנס חתימת ביטקוין</translation>
     </message>
     <message>
@@ -1658,7 +1658,7 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Peercoin developers</source>
+        <source>The Ebicoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2196,7 +2196,7 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Peercoin version</source>
+        <source>Ebicoin version</source>
         <translation>גרסת ביטקוין</translation>
     </message>
     <message>
@@ -2206,8 +2206,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>שלח פקודה ל -server או peercoind</translation>
+        <source>Send command to -server or ebicoind</source>
+        <translation>שלח פקודה ל -server או ebicoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2226,13 +2226,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>ציין קובץ הגדרות (ברירת מחדל: peercoin.conf)</translation>
+        <source>Specify configuration file (default: ebicoin.conf)</source>
+        <translation>ציין קובץ הגדרות (ברירת מחדל: ebicoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>ציין קובץ pid (ברירת מחדל: peercoind.pid)</translation>
+        <source>Specify pid file (default: ebicoind.pid)</source>
+        <translation>ציין קובץ pid (ברירת מחדל: ebicoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2309,24 +2309,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=ebicoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Ebicoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, עליך לקבוע סיסמת RPC בקובץ הקונפיגורציה:
  %s
 מומלץ להשתמש בסיסמא האקראית הבאה:
-rpcuser=peercoinrpc
+rpcuser=ebicoinrpc
 rpcpassword=%s
 (אין צורך לזכור את הסיסמה)
 אסור ששם המשתמש והסיסמא יהיו זהים.
 אם הקובץ אינו קיים, צור אותו עם הרשאות קריאה לבעלים בלבד.
 זה מומלץ לסמן alertnotify כדי לקבל דיווח על תקלות;
-למשל: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo.com 
+למשל: alertnotify=echo %%s | mail -s &quot;Ebicoin Alert&quot; admin@foo.com 
 </translation>
     </message>
     <message>
@@ -2341,7 +2341,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Peercoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Ebicoin is probably already running.</source>
         <translation>לא מסוגל להשיג נעילה על תיקיית הנתונים %s. כנראה שביטקוין כבר רץ.</translation>
     </message>
     <message>
@@ -2386,7 +2386,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Peercoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Ebicoin will not work properly.</source>
         <translation>אזהרה: אנא בדוק שהתאריך והשעה של המחשב שלך נכונים! אם השעון שלך אינו נכון ביטקוין לא יעבוד כראוי.</translation>
     </message>
     <message>
@@ -2826,12 +2826,12 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Peercoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Ebicoin</source>
         <translation>שגיאה בטעינת הקובץ wallet.dat: הארנק דורש גרסה חדשה יותר של ביטקוין</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Peercoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Ebicoin to complete</source>
         <translation>יש לכתוב מחדש את הארנק: אתחל את ביטקוין לסיום</translation>
     </message>
     <message>
@@ -2891,7 +2891,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Peercoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Ebicoin is probably already running.</source>
         <translation>לא ניתן לקשור ל-%s במחשב זה. ביטקוין כנראה עדיין רץ.</translation>
     </message>
     <message>

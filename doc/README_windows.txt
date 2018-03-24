@@ -18,12 +18,12 @@ help further advance the field of crypto-currency.
 
 Setup
 -----
-After completing windows setup then run peercoin-qt.
-Alternatively you can run windows command line (cmd) in peercoin program dir.
+After completing windows setup then run ebicoin-qt.
+Alternatively you can run windows command line (cmd) in ebicoin program dir.
   cd daemon
-  peercoind
-You would need to create a configuration file peercoin.conf in the default
-wallet directory. Grant access to peercoind/peercoin-qt in anti-virus and firewall
+  ebicoind
+You would need to create a configuration file ebicoin.conf in the default
+wallet directory. Grant access to ebicoind/ebicoin-qt in anti-virus and firewall
 applications if necessary.
 
 The software automatically finds other nodes to connect to.  You can
@@ -37,17 +37,17 @@ Upgrade
 -------
 All your existing coins/transactions should be intact with the upgrade.
 To upgrade from 0.5, first backup wallet in qt menu or by command line
-peercoind backupwallet <destination_backup_file>
-Then shutdown peercoind by
-peercoind stop
+ebicoind backupwallet <destination_backup_file>
+Then shutdown ebicoind by
+ebicoind stop
 Uninstall v0.5 client, download and install v0.6 client.
 Remove all files and subdirectory in your wallet directory EXCEPT FOR
-wallet.dat (wallet file) and peercoin.conf (configuration file).
+wallet.dat (wallet file) and ebicoin.conf (configuration file).
 For this upgrade blockchain re-download is required.
 
 
 See the documentation/wiki at github:
-  http://github.com/peercoin/peercoin
+  http://github.com/ebicoin/ebicoin
 for help and more information.
 
 

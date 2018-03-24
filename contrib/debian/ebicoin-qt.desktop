@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Ebicoin
+Comment=Core wallet for Ebicoin P2P Cryptocurrency
+Comment[de]=Offizieller Client für die Kryptowährung Ebicoin
+Exec=/usr/bin/ebicoin-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/ebicoin.png
+MimeType=x-scheme-handler/ebicoin;
+Categories=Application;Network;

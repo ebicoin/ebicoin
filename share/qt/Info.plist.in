@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>ppcoin.icns</string>
+  <string>ebicoin.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Peercoin-Qt</string>
+  <string>Ebicoin-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>org.peercoin.Peercoin-Qt</string>
+  <string>org.ebicoin.Ebicoin-Qt</string>
 
   <key>NSPrincipalClass</key>
     <string>NSApplication</string>

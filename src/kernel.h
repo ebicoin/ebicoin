@@ -1,8 +1,8 @@
 // Copyright (c) 2012-2018 The Peercoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef PPCOIN_KERNEL_H
-#define PPCOIN_KERNEL_H
+#ifndef EBICOIN_KERNEL_H
+#define EBICOIN_KERNEL_H
 
 #include "main.h"
 
@@ -48,4 +48,4 @@ unsigned int GetStakeModifierChecksum(const CBlockIndex* pindex);
 // Check stake modifier hard checkpoints
 bool CheckStakeModifierCheckpoints(int nHeight, unsigned int nStakeModifierChecksum);
 
-#endif // PPCOIN_KERNEL_H
+#endif // EBICOIN_KERNEL_H

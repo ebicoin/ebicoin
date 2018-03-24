@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Peercoin</source>
-        <translation>Despre Peercoin</translation>
+        <source>About Ebicoin</source>
+        <translation>Despre Ebicoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Peercoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Peercoin&lt;/b&gt; versiunea</translation>
+        <source>&lt;b&gt;Ebicoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Ebicoin&lt;/b&gt; versiunea</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -29,7 +29,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Peercoin developers</source>
+        <source>The Ebicoin developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -62,8 +62,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Peercoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Acestea sunt adresele dumneavoastră Peercoin pentru a primi plăţi. Dacă doriţi, puteți da o adresa diferită fiecărui expeditor, pentru a putea ţine evidenţa plăţilor.</translation>
+        <source>These are your Ebicoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Acestea sunt adresele dumneavoastră Ebicoin pentru a primi plăţi. Dacă doriţi, puteți da o adresa diferită fiecărui expeditor, pentru a putea ţine evidenţa plăţilor.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -77,7 +77,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Peercoin address</source>
+        <source>Sign a message to prove you own a Ebicoin address</source>
         <translation>Semneaza mesajul pentru a dovedi ca detii aceasta adresa Bitocin</translation>
     </message>
     <message>
@@ -102,8 +102,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Peercoin address</source>
-        <translation>Verifica mesajul pentru a te asigura ca a fost insemnat cu o adresa peercoin specifica</translation>
+        <source>Verify a message to ensure it was signed with a specified Ebicoin address</source>
+        <translation>Verifica mesajul pentru a te asigura ca a fost insemnat cu o adresa ebicoin specifica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -117,7 +117,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Peercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Ebicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -243,8 +243,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEERCOINS&lt;/b&gt;!</source>
-        <translation>Atenție: Dacă pierdeţi parola portofelului electronic dupa criptare, &lt;b&gt;VEŢI PIERDE ÎNTREAGA SUMĂ DE PEERCOIN ACUMULATĂ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR EBICOINS&lt;/b&gt;!</source>
+        <translation>Atenție: Dacă pierdeţi parola portofelului electronic dupa criptare, &lt;b&gt;VEŢI PIERDE ÎNTREAGA SUMĂ DE EBICOIN ACUMULATĂ&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -270,8 +270,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin se va închide acum pentru a termina procesul de criptare. Amintiți-vă că criptarea portofelului dumneavoastră nu poate proteja în totalitate peercoins dvs. de a fi furate de intentii rele.</translation>
+        <source>Ebicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ebicoins from being stolen by malware infecting your computer.</source>
+        <translation>Ebicoin se va închide acum pentru a termina procesul de criptare. Amintiți-vă că criptarea portofelului dumneavoastră nu poate proteja în totalitate ebicoins dvs. de a fi furate de intentii rele.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -369,8 +369,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Peercoin</source>
-        <translation>Informaţii despre Peercoin</translation>
+        <source>Show information about Ebicoin</source>
+        <translation>Informaţii despre Ebicoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -414,13 +414,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Peercoin address</source>
-        <translation>&amp;Trimiteţi Peercoin către o anumită adresă</translation>
+        <source>Send coins to a Ebicoin address</source>
+        <translation>&amp;Trimiteţi Ebicoin către o anumită adresă</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Peercoin</source>
-        <translation>Modifică setările pentru Peercoin</translation>
+        <source>Modify configuration options for Ebicoin</source>
+        <translation>Modifică setările pentru Ebicoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -450,8 +450,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Peercoin</source>
-        <translation>Peercoin</translation>
+        <source>Ebicoin</source>
+        <translation>Ebicoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -475,8 +475,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Peercoin</source>
-        <translation>&amp;Despre Peercoin</translation>
+        <source>&amp;About Ebicoin</source>
+        <translation>&amp;Despre Ebicoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -495,12 +495,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Peercoin addresses to prove you own them</source>
+        <source>Sign messages with your Ebicoin addresses to prove you own them</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Peercoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Ebicoin addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -531,13 +531,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Peercoin client</source>
-        <translation>Client Peercoin</translation>
+        <source>Ebicoin client</source>
+        <translation>Client Ebicoin</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Peercoin network</source>
-        <translation><numerusform>%n active connections to Peercoin network</numerusform><numerusform>%n active connections to Peercoin network</numerusform><numerusform>%n active connections to Peercoin network</numerusform></translation>
+        <source>%n active connection(s) to Ebicoin network</source>
+        <translation><numerusform>%n active connections to Ebicoin network</numerusform><numerusform>%n active connections to Ebicoin network</numerusform><numerusform>%n active connections to Ebicoin network</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -647,7 +647,7 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Peercoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Ebicoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -662,7 +662,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Peercoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Ebicoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -728,8 +728,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
-        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă peercoin valabilă.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Ebicoin address.</source>
+        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă ebicoin valabilă.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -747,8 +747,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Peercoin-Qt</source>
-        <translation>Peercoin-Qt</translation>
+        <source>Ebicoin-Qt</source>
+        <translation>Ebicoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -800,7 +800,7 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 PPC fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
+        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 TAKO fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -810,8 +810,8 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Peercoin after logging in to the system.</source>
-        <translation>Porneşte automat programul Peercoin la pornirea computerului.</translation>
+        <source>Automatically start Ebicoin after logging in to the system.</source>
+        <translation>Porneşte automat programul Ebicoin la pornirea computerului.</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -820,8 +820,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Peercoin on system login</source>
-        <translation>&amp;S Porneşte Peercoin la pornirea sistemului</translation>
+        <source>&amp;Start Ebicoin on system login</source>
+        <translation>&amp;S Porneşte Ebicoin la pornirea sistemului</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -845,8 +845,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Peercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat în router portul aferent clientului Peercoin. Funcţionează doar în cazul în care routerul e compatibil UPnP şi opţiunea e activată.</translation>
+        <source>Automatically open the Ebicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat în router portul aferent clientului Ebicoin. Funcţionează doar în cazul în care routerul e compatibil UPnP şi opţiunea e activată.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -855,8 +855,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Peercoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conectare la reţeaua Peercoin folosind un proxy SOCKS (de exemplu, când conexiunea se stabileşte prin reţeaua Tor)</translation>
+        <source>Connect to the Ebicoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Conectare la reţeaua Ebicoin folosind un proxy SOCKS (de exemplu, când conexiunea se stabileşte prin reţeaua Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -930,8 +930,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Peercoin.</source>
-        <translation>Limba interfeței utilizatorului poate fi setat aici. Această setare va avea efect după repornirea Peercoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ebicoin.</source>
+        <translation>Limba interfeței utilizatorului poate fi setat aici. Această setare va avea efect după repornirea Ebicoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -941,12 +941,12 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Alege subdiviziunea folosită la afişarea interfeţei şi la trimiterea de peercoin.</translation>
+        <translation>Alege subdiviziunea folosită la afişarea interfeţei şi la trimiterea de ebicoin.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Peercoin addresses in the transaction list or not.</source>
-        <translation>Vezi dacă adresele Peercoin sunt în lista de tranzacție sau nu</translation>
+        <source>Whether to show Ebicoin addresses in the transaction list or not.</source>
+        <translation>Vezi dacă adresele Ebicoin sunt în lista de tranzacție sau nu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -997,13 +997,13 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Peercoin.</source>
+        <source>This setting will take effect after restarting Ebicoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+29"/>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Adresa peercoin pe care a-ti specificat-o este invalida</translation>
+        <translation>Adresa ebicoin pe care a-ti specificat-o este invalida</translation>
     </message>
 </context>
 <context>
@@ -1016,8 +1016,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Peercoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informațiile afișate pot fi expirate. Portofelul tău se sincronizează automat cu rețeaua Peercoin după ce o conexiune este stabilita, dar acest proces nu a fost finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ebicoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informațiile afișate pot fi expirate. Portofelul tău se sincronizează automat cu rețeaua Ebicoin după ce o conexiune este stabilita, dar acest proces nu a fost finalizat încă.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1070,7 +1070,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <source>Cannot start ebicoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1220,8 +1220,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Peercoin-Qt help message to get a list with possible Peercoin command-line options.</source>
-        <translation>Arata mesajul de ajutor Peercoin-QT pentru a obtine o lista cu posibilele optiuni ale comenzilor Peercoin</translation>
+        <source>Show the Ebicoin-Qt help message to get a list with possible Ebicoin command-line options.</source>
+        <translation>Arata mesajul de ajutor Ebicoin-QT pentru a obtine o lista cu posibilele optiuni ale comenzilor Ebicoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1240,13 +1240,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Peercoin - Debug window</source>
-        <translation>Peercoin-Fereastra pentru debug</translation>
+        <source>Ebicoin - Debug window</source>
+        <translation>Ebicoin-Fereastra pentru debug</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Peercoin Core</source>
-        <translation>Peercoin Core</translation>
+        <source>Ebicoin Core</source>
+        <translation>Ebicoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1255,7 +1255,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Peercoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Ebicoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Deschide logurile debug din directorul curent. Aceasta poate dura cateva secunde pentru fisierele mai mari</translation>
     </message>
     <message>
@@ -1265,8 +1265,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Peercoin RPC console.</source>
-        <translation>Bun venit la consola peercoin RPC</translation>
+        <source>Welcome to the Ebicoin RPC console.</source>
+        <translation>Bun venit la consola ebicoin RPC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1291,7 +1291,7 @@ Address: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Trimite Peercoin</translation>
+        <translation>Trimite Ebicoin</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1341,7 +1341,7 @@ Address: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Confirmaţi trimiterea de peercoin</translation>
+        <translation>Confirmaţi trimiterea de ebicoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1386,7 +1386,7 @@ Address: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Eroare: Tranyacţia a fost respinsă.  Acesta poate fi rezultatul cheltuirii prealabile a unei sume de peercoin din portofelul electronic, ca în cazul folosirii unei copii a fisierului wallet.dat, în care s-au efectuat tranzacţii neînregistrate în fisierul curent.</translation>
+        <translation>Eroare: Tranyacţia a fost respinsă.  Acesta poate fi rezultatul cheltuirii prealabile a unei sume de ebicoin din portofelul electronic, ca în cazul folosirii unei copii a fisierului wallet.dat, în care s-au efectuat tranzacţii neînregistrate în fisierul curent.</translation>
     </message>
 </context>
 <context>
@@ -1449,8 +1449,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Peercoin address</source>
-        <translation>Introduceţi o adresă Peercoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Ebicoin address</source>
+        <translation>Introduceţi o adresă Ebicoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1473,7 +1473,7 @@ Address: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduceţi o adresă Peercoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Introduceţi o adresă Ebicoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1514,8 +1514,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Peercoin address</source>
-        <translation>Semneaza mesajul pentru a dovedi ca detii acesta adresa Peercoin</translation>
+        <source>Sign the message to prove you own this Ebicoin address</source>
+        <translation>Semneaza mesajul pentru a dovedi ca detii acesta adresa Ebicoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1546,12 +1546,12 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introduceţi o adresă Peercoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>Introduceţi o adresă Ebicoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Peercoin address</source>
-        <translation>Verifica mesajul pentru a fi sigur ca a fost semnat cu adresa Peercoin specifica</translation>
+        <source>Verify the message to ensure it was signed with the specified Ebicoin address</source>
+        <translation>Verifica mesajul pentru a fi sigur ca a fost semnat cu adresa Ebicoin specifica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1566,8 +1566,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Peercoin address</source>
-        <translation>Introduceţi o adresă Peercoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Ebicoin address</source>
+        <translation>Introduceţi o adresă Ebicoin (de exemplu: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1576,7 +1576,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Peercoin signature</source>
+        <source>Enter Ebicoin signature</source>
         <translation>Introduce semnatura bitocin</translation>
     </message>
     <message>
@@ -1650,7 +1650,7 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Peercoin developers</source>
+        <source>The Ebicoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1785,7 +1785,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Monedele peercoin generate se pot cheltui dupa parcurgerea a 120 de blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat lanţului de blocuri.  Dacă nu poate fi inclus in lanţ, starea sa va deveni &quot;neacceptat&quot; si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
+        <translation>Monedele ebicoin generate se pot cheltui dupa parcurgerea a 120 de blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat lanţului de blocuri.  Dacă nu poate fi inclus in lanţ, starea sa va deveni &quot;neacceptat&quot; si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2138,7 +2138,7 @@ Address: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Trimite Peercoin</translation>
+        <translation>Trimite Ebicoin</translation>
     </message>
 </context>
 <context>
@@ -2188,8 +2188,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Peercoin version</source>
-        <translation>versiunea Peercoin</translation>
+        <source>Ebicoin version</source>
+        <translation>versiunea Ebicoin</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2198,8 +2198,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Trimite comanda la -server sau peercoind</translation>
+        <source>Send command to -server or ebicoind</source>
+        <translation>Trimite comanda la -server sau ebicoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2218,12 +2218,12 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Specifica-ți configurația fisierului (in mod normal: peercoin.conf)</translation>
+        <source>Specify configuration file (default: ebicoin.conf)</source>
+        <translation>Specifica-ți configurația fisierului (in mod normal: ebicoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
+        <source>Specify pid file (default: ebicoind.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2302,13 +2302,13 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=ebicoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Ebicoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2324,7 +2324,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Peercoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Ebicoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2369,7 +2369,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Peercoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Ebicoin will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2620,7 +2620,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+5"/>
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Optiuni SSl (vezi Peercoin wiki pentru intructiunile de instalare)</translation>
+        <translation>Optiuni SSl (vezi Ebicoin wiki pentru intructiunile de instalare)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2811,13 +2811,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Peercoin</source>
-        <translation>Eroare incarcare wallet.dat: Portofelul are nevoie de o versiune Peercoin mai noua</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Ebicoin</source>
+        <translation>Eroare incarcare wallet.dat: Portofelul are nevoie de o versiune Ebicoin mai noua</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Peercoin to complete</source>
-        <translation>Portofelul trebuie rescris: restarteaza aplicatia peercoin pentru a face asta.</translation>
+        <source>Wallet needed to be rewritten: restart Ebicoin to complete</source>
+        <translation>Portofelul trebuie rescris: restarteaza aplicatia ebicoin pentru a face asta.</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2878,8 +2878,8 @@ details suggestions history
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Peercoin is probably already running.</source>
-        <translation>Imposibilitatea de a lega la% s pe acest computer. Peercoin este, probabil, deja în execuție.</translation>
+        <source>Unable to bind to %s on this computer. Ebicoin is probably already running.</source>
+        <translation>Imposibilitatea de a lega la% s pe acest computer. Ebicoin este, probabil, deja în execuție.</translation>
     </message>
     <message>
         <location line="+64"/>

@@ -70,7 +70,7 @@ matrix:
           - cd $TRAVIS_BUILD_DIR
         install: true
         script:
-          - travis_wait 60 ./scripts/windows-crosscompile/compile-peercoin.sh
+          - travis_wait 60 ./scripts/windows-crosscompile/compile-ebicoin.sh
       #osx     
       - os: osx
         osx_image: xcode9.2

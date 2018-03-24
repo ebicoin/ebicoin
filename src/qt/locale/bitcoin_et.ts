@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Peercoin</source>
-        <translation>Peercoinist</translation>
+        <source>About Ebicoin</source>
+        <translation>Ebicoinist</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Peercoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Peercoini&lt;/b&gt; versioon</translation>
+        <source>&lt;b&gt;Ebicoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Ebicoini&lt;/b&gt; versioon</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,7 +34,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+0"/>
-        <source>The Peercoin developers</source>
+        <source>The Ebicoin developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -67,8 +67,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Peercoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Maksete saamiseks kasutatavad Peercoini aadressid. Maksjate paremaks jälgimiseks võib igaühele anda erineva.</translation>
+        <source>These are your Ebicoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Maksete saamiseks kasutatavad Ebicoini aadressid. Maksjate paremaks jälgimiseks võib igaühele anda erineva.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,7 +82,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Peercoin address</source>
+        <source>Sign a message to prove you own a Ebicoin address</source>
         <translation>Allkirjasta sõnum, et tõestada Bitconi aadressi olemasolu.</translation>
     </message>
     <message>
@@ -107,8 +107,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Peercoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Peercoini aadressiga.</translation>
+        <source>Verify a message to ensure it was signed with a specified Ebicoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Ebicoini aadressiga.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Peercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Peercoini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
+        <source>These are your Ebicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Ebicoini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -248,8 +248,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEERCOINS&lt;/b&gt;!</source>
-        <translation>Hoiatus: Kui sa kaotad oma, rahakoti krüpteerimisel kasutatud, salafraasi, siis &lt;b&gt;KAOTAD KA KÕIK OMA PEERCOINID&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR EBICOINS&lt;/b&gt;!</source>
+        <translation>Hoiatus: Kui sa kaotad oma, rahakoti krüpteerimisel kasutatud, salafraasi, siis &lt;b&gt;KAOTAD KA KÕIK OMA EBICOINID&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -275,8 +275,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista peercoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
+        <source>Ebicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ebicoins from being stolen by malware infecting your computer.</source>
+        <translation>Ebicoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista ebicoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -374,8 +374,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Peercoin</source>
-        <translation>Kuva info Peercoini kohta</translation>
+        <source>Show information about Ebicoin</source>
+        <translation>Kuva info Ebicoini kohta</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Peercoin address</source>
-        <translation>Saada münte Peercoini aadressile</translation>
+        <source>Send coins to a Ebicoin address</source>
+        <translation>Saada münte Ebicoini aadressile</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Peercoin</source>
-        <translation>Muuda Peercoini seadeid</translation>
+        <source>Modify configuration options for Ebicoin</source>
+        <translation>Muuda Ebicoini seadeid</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Peercoin</source>
-        <translation>Peercoin</translation>
+        <source>Ebicoin</source>
+        <translation>Ebicoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Peercoin</source>
-        <translation>%Peercoinist</translation>
+        <source>&amp;About Ebicoin</source>
+        <translation>%Ebicoinist</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Peercoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Peercoini aadressiga</translation>
+        <source>Sign messages with your Ebicoin addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Ebicoini aadressiga</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Peercoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Peercoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Ebicoin addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Ebicoini aadressiga</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+47"/>
-        <source>Peercoin client</source>
-        <translation>Peercoini klient</translation>
+        <source>Ebicoin client</source>
+        <translation>Ebicoini klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Peercoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Peercoini võrku</numerusform><numerusform>%n aktiivset ühendust Peercoini võrku</numerusform></translation>
+        <source>%n active connection(s) to Ebicoin network</source>
+        <translation><numerusform>%n aktiivne ühendus Ebicoini võrku</numerusform><numerusform>%n aktiivset ühendust Ebicoini võrku</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -655,8 +655,8 @@ Aadress: %4⏎</translation>
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Peercoin address or malformed URI parameters.</source>
-        <translation>URI ei suudeta parsida. Põhjuseks võib olla kehtetu Peercoini aadress või vigased URI parameetrid.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Ebicoin address or malformed URI parameters.</source>
+        <translation>URI ei suudeta parsida. Põhjuseks võib olla kehtetu Ebicoini aadress või vigased URI parameetrid.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,8 +670,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Peercoin can no longer continue safely and will quit.</source>
-        <translation>Ilmnes kriitiline tõrge. Peercoin suletakse turvakaalutluste tõttu.</translation>
+        <source>A fatal error occurred. Ebicoin can no longer continue safely and will quit.</source>
+        <translation>Ilmnes kriitiline tõrge. Ebicoin suletakse turvakaalutluste tõttu.</translation>
     </message>
 </context>
 <context>
@@ -736,8 +736,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
-        <translation>Sisestatud aadress &quot;%1&quot; ei ole Peercoinis kehtiv.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Ebicoin address.</source>
+        <translation>Sisestatud aadress &quot;%1&quot; ei ole Ebicoinis kehtiv.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -755,8 +755,8 @@ Aadress: %4⏎</translation>
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Peercoin-Qt</source>
-        <translation>Peercoini-Qt</translation>
+        <source>Ebicoin-Qt</source>
+        <translation>Ebicoini-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -808,7 +808,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 PPC fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
+        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 TAKO fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -818,8 +818,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Peercoin after logging in to the system.</source>
-        <translation>Käivita Peercoin süsteemi logimisel.</translation>
+        <source>Automatically start Ebicoin after logging in to the system.</source>
+        <translation>Käivita Ebicoin süsteemi logimisel.</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -828,8 +828,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Peercoin on system login</source>
-        <translation>&amp;Start Peercoin sisselogimisel</translation>
+        <source>&amp;Start Ebicoin on system login</source>
+        <translation>&amp;Start Ebicoin sisselogimisel</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -853,8 +853,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Peercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Peercoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the Ebicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ebicoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -863,8 +863,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Peercoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Kasuta Peercoini võrgustikku ühendumiseks SOCKS turva proxy&apos;t (nt Tor&apos;i kasutamisel).</translation>
+        <source>Connect to the Ebicoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Kasuta Ebicoini võrgustikku ühendumiseks SOCKS turva proxy&apos;t (nt Tor&apos;i kasutamisel).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -938,8 +938,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Peercoin.</source>
-        <translation>Kasutajaliidese keele valimise koht. Valik rakendub Peercoini käivitamisel.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ebicoin.</source>
+        <translation>Kasutajaliidese keele valimise koht. Valik rakendub Ebicoini käivitamisel.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -953,8 +953,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Peercoin addresses in the transaction list or not.</source>
-        <translation>Kuvada Peercoini aadress tehingute loetelus või mitte.</translation>
+        <source>Whether to show Ebicoin addresses in the transaction list or not.</source>
+        <translation>Kuvada Ebicoini aadress tehingute loetelus või mitte.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1005,8 +1005,8 @@ Aadress: %4⏎</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Peercoin.</source>
-        <translation>Tehtud valik rakendub Peercoini käivitamisel.</translation>
+        <source>This setting will take effect after restarting Ebicoin.</source>
+        <translation>Tehtud valik rakendub Ebicoini käivitamisel.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1024,7 +1024,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Peercoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ebicoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1078,8 +1078,8 @@ Aadress: %4⏎</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
-        <translation>Peercoin ei käivitu: vajuta-maksa toiming</translation>
+        <source>Cannot start ebicoin: click-to-pay handler</source>
+        <translation>Ebicoin ei käivitu: vajuta-maksa toiming</translation>
     </message>
 </context>
 <context>
@@ -1228,8 +1228,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Peercoin-Qt help message to get a list with possible Peercoin command-line options.</source>
-        <translation>Näita kehtivate käsurea valikute kuvamiseks Peercoini-Qt abiteksti</translation>
+        <source>Show the Ebicoin-Qt help message to get a list with possible Ebicoin command-line options.</source>
+        <translation>Näita kehtivate käsurea valikute kuvamiseks Ebicoini-Qt abiteksti</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1248,13 +1248,13 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Peercoin - Debug window</source>
-        <translation>Peercoin - debugimise aken</translation>
+        <source>Ebicoin - Debug window</source>
+        <translation>Ebicoin - debugimise aken</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Peercoin Core</source>
-        <translation>Peercoini tuumik</translation>
+        <source>Ebicoin Core</source>
+        <translation>Ebicoini tuumik</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1263,8 +1263,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Peercoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ava Peercoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
+        <source>Open the Ebicoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ava Ebicoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1273,8 +1273,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Peercoin RPC console.</source>
-        <translation>Teretulemast Peercoini RPC konsooli.</translation>
+        <source>Welcome to the Ebicoin RPC console.</source>
+        <translation>Teretulemast Ebicoini RPC konsooli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1457,8 +1457,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Peercoin address</source>
-        <translation>Sisesta Peercoini aadress</translation>
+        <source>Enter a Ebicoin address</source>
+        <translation>Sisesta Ebicoini aadress</translation>
     </message>
 </context>
 <context>
@@ -1522,8 +1522,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Peercoin address</source>
-        <translation>Allkirjasta sõnum Peercoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Ebicoin address</source>
+        <translation>Allkirjasta sõnum Ebicoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1558,8 +1558,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Peercoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Peercoini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Ebicoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Ebicoini aadressiga.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1574,8 +1574,8 @@ Aadress: %4⏎</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Peercoin address</source>
-        <translation>Sisesta Peercoini aadress (nt: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Ebicoin address</source>
+        <translation>Sisesta Ebicoini aadress (nt: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1584,8 +1584,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Peercoin signature</source>
-        <translation>Sisesta Peercoini allkiri</translation>
+        <source>Enter Ebicoin signature</source>
+        <translation>Sisesta Ebicoini allkiri</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1658,7 +1658,7 @@ Aadress: %4⏎</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Peercoin developers</source>
+        <source>The Ebicoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2196,8 +2196,8 @@ Aadress: %4⏎</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Peercoin version</source>
-        <translation>Peercoini versioon</translation>
+        <source>Ebicoin version</source>
+        <translation>Ebicoini versioon</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2206,8 +2206,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Saada käsklus -serverile või peercoindile</translation>
+        <source>Send command to -server or ebicoind</source>
+        <translation>Saada käsklus -serverile või ebicoindile</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2226,13 +2226,13 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Täpsusta sätete fail (vaikimisi: peercoin.conf)</translation>
+        <source>Specify configuration file (default: ebicoin.conf)</source>
+        <translation>Täpsusta sätete fail (vaikimisi: ebicoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Täpsusta PID fail (vaikimisi: peercoin.pid)</translation>
+        <source>Specify pid file (default: ebicoind.pid)</source>
+        <translation>Täpsusta PID fail (vaikimisi: ebicoin.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2309,24 +2309,24 @@ Aadress: %4⏎</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=ebicoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Ebicoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, sul tuleb rpcpassword määrata seadete failis:
 %s
 Soovitatav on kasutada järgmist juhuslikku parooli:
-rpcuser=peercoinrpc
+rpcuser=ebicoinrpc
 rpcpassword=%s
 (seda parooli ei pea meeles pidama)
 Kasutajanimi ning parool EI TOHI kattuda.
 Kui faili ei leita, loo see ainult-omaniku-loetavas failiõigustes .
 Soovitatav on seadistada tõrgete puhul teavitus;
-nt: alertnotify=echo %%s | email -s &quot;Peercoin Alert&quot; admin@foo.com
+nt: alertnotify=echo %%s | email -s &quot;Ebicoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2341,8 +2341,8 @@ nt: alertnotify=echo %%s | email -s &quot;Peercoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Peercoin is probably already running.</source>
-        <translation>Ei suuda määrata ainuõigust andmekaustale %s. Tõenäolisel on Peercoin juba avatud.</translation>
+        <source>Cannot obtain a lock on data directory %s. Ebicoin is probably already running.</source>
+        <translation>Ei suuda määrata ainuõigust andmekaustale %s. Tõenäolisel on Ebicoin juba avatud.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2386,8 +2386,8 @@ nt: alertnotify=echo %%s | email -s &quot;Peercoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Peercoin will not work properly.</source>
-        <translation>Hoiatus: Palun kontrolli oma arvuti kuupäeva/kellaaega! Kui arvuti kell on vale, siis Peercoin ei tööta korralikult</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Ebicoin will not work properly.</source>
+        <translation>Hoiatus: Palun kontrolli oma arvuti kuupäeva/kellaaega! Kui arvuti kell on vale, siis Ebicoin ei tööta korralikult</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2637,7 +2637,7 @@ nt: alertnotify=echo %%s | email -s &quot;Peercoin Alert&quot; admin@foo.com
     <message>
         <location line="+5"/>
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL valikud: (vaata Peercoini Wikist või SSL sätete juhendist)</translation>
+        <translation>SSL valikud: (vaata Ebicoini Wikist või SSL sätete juhendist)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2826,13 +2826,13 @@ nt: alertnotify=echo %%s | email -s &quot;Peercoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Peercoin</source>
-        <translation>Viga wallet.dat käivitamisel: Rahakott nõuab Peercoini uusimat versiooni</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Ebicoin</source>
+        <translation>Viga wallet.dat käivitamisel: Rahakott nõuab Ebicoini uusimat versiooni</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Peercoin to complete</source>
-        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivita Peercoin</translation>
+        <source>Wallet needed to be rewritten: restart Ebicoin to complete</source>
+        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivita Ebicoin</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2891,8 +2891,8 @@ nt: alertnotify=echo %%s | email -s &quot;Peercoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Peercoin is probably already running.</source>
-        <translation>%s&apos;ga ei ole võimalik sellest arvutist siduda. Peercoin juba töötab.</translation>
+        <source>Unable to bind to %s on this computer. Ebicoin is probably already running.</source>
+        <translation>%s&apos;ga ei ole võimalik sellest arvutist siduda. Ebicoin juba töötab.</translation>
     </message>
     <message>
         <location line="+64"/>
