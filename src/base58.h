@@ -251,7 +251,7 @@ public:
 };
 
 /** base58-encoded bitcoin addresses.
- * ppcoin public-key-hash-addresses have version 55 (or 111 testnet).
+ * ebicoin public-key-hash-addresses have version 33 (or 92 testnet).
  * The data vector contains RIPEMD160(SHA256(pubkey)), where pubkey is the serialized public key.
  * Script-hash-addresses have version 117 (or 196 testnet).
  * The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script.
@@ -273,10 +273,10 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 55,  // ppcoin: addresses begin with 'P'
-        SCRIPT_ADDRESS = 117, // ppcoin: addresses begin with 'p'
-        PUBKEY_ADDRESS_TEST = 111,
-        SCRIPT_ADDRESS_TEST = 196,
+        PUBKEY_ADDRESS = 33, // ebicoin: addresses begin with 'E'
+        SCRIPT_ADDRESS = 92, // ebicoin: addresses begin with 'e'
+        PUBKEY_ADDRESS_TEST = 67, // ebicoin: addresses begin with 'T' or 'U'
+        SCRIPT_ADDRESS_TEST = 129, // ebicoin: addresses begin with 't' or 'u'
     };
 
     bool Set(const CKeyID &id) {

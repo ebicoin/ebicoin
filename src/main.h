@@ -59,18 +59,18 @@ static const unsigned int UNDOFILE_CHUNK_SIZE = 0x100000; // 1 MiB
 /** Fake height value used in CCoins to signify they are only in the memory pool (since 0.8) */
 static const unsigned int MEMPOOL_HEIGHT = 0x7FFFFFFF;
 /** No amount larger than this (in satoshi) is valid */
-static const int64 MAX_MONEY = 2000000000 * COIN;
+static const int64 MAX_MONEY = 40000000000 * COIN;
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 static const int64 MIN_TX_FEE = CENT;
 static const int64 MIN_RELAY_TX_FEE = CENT;
-static const int64 MAX_MINT_PROOF_OF_WORK = 9999 * COIN;
+static const int64 MAX_MINT_PROOF_OF_WORK = 100000 * COIN;
 static const int64 MIN_TXOUT_AMOUNT = MIN_TX_FEE;
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
-static const int COINBASE_MATURITY_TAKO = 500;
+static const int COINBASE_MATURITY_TAKO = 90;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
-static const int STAKE_TARGET_SPACING = 10 * 60; // 10-minute block spacing 
-static const int STAKE_MIN_AGE = 60 * 60 * 24 * 30; // minimum age for coin age
-static const int STAKE_MAX_AGE = 60 * 60 * 24 * 90; // stake age of full weight
+static const int STAKE_TARGET_SPACING = 80; // 80-second block spacing 
+static const int STAKE_MIN_AGE = 60 * 60 * 12; // minimum age for coin age (12 hours)
+static const int STAKE_MAX_AGE = 60 * 60 * 24 * 30; // stake age of full weight (30 days)
 /** Maximum number of script-checking threads allowed */
 static const int MAX_SCRIPTCHECK_THREADS = 16;
 #ifdef USE_UPNP
@@ -80,7 +80,7 @@ static const int fHaveUPnP = false;
 #endif
 
 static const uint256 hashGenesisBlockOfficial("0x00001f2c3b274127c951bdcec738ecdfd9a2ffced89aa5670ccd4ba3d3837263");
-static const uint256 hashGenesisBlockTestNet("0x0000117e3f56a0a1813285ef84f3c99142d2513dec3f457e09d1290304a68dee");
+static const uint256 hashGenesisBlockTestNet("0x00003893ab584b5c83a6858d705c063584541df856d99387673d2f01391d3c50");
 
 static const int64 nMaxClockDrift = 2 * 60 * 60;        // two hours
 

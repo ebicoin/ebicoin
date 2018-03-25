@@ -1156,7 +1156,7 @@ int64 GetProofOfWorkReward(unsigned int nBits)
 // ppcoin: miner's coin stake is rewarded based on coin age spent (coin-days)
 int64 GetProofOfStakeReward(int64 nCoinAge)
 {
-    static int64 nRewardCoinYear = CENT;  // creation amount per coin-year
+    static int64 nRewardCoinYear = 10 * CENT;  // creation amount per coin-year
     int64 nSubsidy = nCoinAge * 33 / (365 * 33 + 8) * nRewardCoinYear;
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%" PRI64d"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
@@ -1190,7 +1190,7 @@ void static PruneOrphanBlocks()
 
 
 static const int64 nTargetTimespan = 7 * 24 * 60 * 60;  // one week
-static const int64 nTargetSpacingWorkMax = 12 * STAKE_TARGET_SPACING; // 2-hour
+static const int64 nTargetSpacingWorkMax = 12 * STAKE_TARGET_SPACING; // 16-minute
 
 //
 // minimum amount of work that could possibly be required nTime after
@@ -3277,7 +3277,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 4a5e1e
 
         // Genesis block
-        const char* pszTimestamp = "Matonis 07-AUG-2012 Parallel Currencies And The Roadmap To Monetary Freedom";
+        const char* pszTimestamp = "I AM A SHRIMP. (EBI(KANI(TAKO))) -- 2018/03/30";
         CTransaction txNew;
         txNew.nTime = 1345083810;
         txNew.vin.resize(1);
@@ -3289,14 +3289,14 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1521999027;
+        block.nTime    = 1522344901;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 2179506352u;
+        block.nNonce   = 79506352;
 
         if (fTestNet)
         {
-            block.nTime    = 1521999027;
-            block.nNonce   = 123617155;
+            block.nTime    = 1522344901;
+            block.nNonce   = 203871318;
         }
 
 #ifdef TESTING
@@ -3316,10 +3316,10 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x3c2d8f85fab4d17aac558cc648a1a58acff0de6deb890c29985690052c5993c2"));
+        assert(block.hashMerkleRoot == uint256("0x0af97545ff92a7f0a5b3d3203577cd0622ffe116636becede2e65ba7c777059d"));
 
         // If genesis block hash does not match, then generate new genesis hash.
-        if (hash != hashGenesisBlock)
+        if (false && hash != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
