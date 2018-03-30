@@ -166,6 +166,14 @@ HEADERS += src/qt/bitcoingui.h \
     src/sync.h \
     src/util.h \
     src/hash.h \
+    src/hash/yescrypt/yescrypt.h \
+    src/hash/yescrypt/sha256.h \
+    src/hash/yescrypt/sha256_c.h \
+    src/hash/yescrypt/yescrypt-best_c.h \
+    src/hash/yescrypt/sysendian.h \
+    src/hash/yescrypt/yescrypt-platform_c.h \
+    src/hash/yescrypt/yescrypt-opt_c.h \
+    src/hash/yescrypt/yescrypt-simd_c.h \
     src/uint256.h \
     src/serialize.h \
     src/main.h \
@@ -257,6 +265,7 @@ SOURCES += src/qt/bitcoin.cpp \
     src/sync.cpp \
     src/util.cpp \
     src/hash.cpp \
+    src/hash/yescrypt/yescrypt.c \
     src/netbase.cpp \
     src/key.cpp \
     src/script.cpp \
