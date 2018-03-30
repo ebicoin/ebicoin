@@ -21,12 +21,12 @@ QToolButton, QPushButton {
 }
 
 QToolButton:checked, QPushButton:checked {
-    background: #3cb054;
+    background: #cc4444;
     border: none;
 }
 
 QToolButton:hover, QPushButton:hover {
-    background: #3cb054;
+    background: #cc4444;
     border: none;
 }
 
@@ -57,7 +57,7 @@ QSpinBox::up-button, QDoubleSpinBox::up-button   {
 }
 
 QSpinBox::up-button:hover, QDoubleSpinBox::up-button:hover   {
-    background: #3cb054;
+    background: #cc4444;
 }
 
 QSpinBox::up-arrow, QDoubleSpinBox::up-arrow   {
@@ -74,7 +74,7 @@ QSpinBox::down-button, QDoubleSpinBox::down-button   {
 }
 
 QSpinBox::down-button:hover, QDoubleSpinBox::down-button:hover   {
-    background: #3cb054;
+    background: #cc4444;
 }
 
 
@@ -109,7 +109,7 @@ QTableView {
     alternate-background-color: #3d3d3d;
     color: white;
     gridline-color: #211f20;
-    selection-background-color: #3cb054;
+    selection-background-color: #cc4444;
  }
 
 QHeaderView::section {
@@ -190,7 +190,7 @@ QFrame {
 }
 
 #labelSendBalanceText {
-  color: #3cb054;
+  color: #cc4444;
   font-size: 20px;
   margin-right: 3px;
 }
@@ -217,7 +217,7 @@ QFrame QLabel#titleNumTransactions,
 QFrame QLabel#labelImmatureText,
 QFrame QLabel#labelUnconfirmedText,
 QFrame QLabel#labelTotalText {
-    color: #3cb054;
+    color: #cc4444;
     font-size: 20px;
 }
 
@@ -291,7 +291,7 @@ QTabBar::tab {
 }
 
 QTabBar::tab:selected {
-    background: #3cb054;
+    background: #cc4444;
 }
 
 QTabBar {
