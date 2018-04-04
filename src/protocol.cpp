@@ -18,24 +18,19 @@
 // a large 4-byte int at any alignment.
 
 // Public testnet message start
-// unsigned char pchMessageStartTestBitcoin[4] = { 0xfa, 0xbf, 0xb5, 0xda };
-static unsigned char pchMessageStartTestOld[4] = { 0xdb, 0xe1, 0xf2, 0xf6 };
-static unsigned char pchMessageStartTestNew[4] = { 0xcb, 0xf2, 0xc0, 0xef };
-static unsigned int nMessageStartTestSwitchTime = 1346200000;
+static unsigned char pchMessageStartTest[4] = { 0xcf, 0xe2, 0xe1, 0xca };
 
-// Ebicoin message start (switch from Bitcoin's in v0.2)
-static unsigned char pchMessageStartBitcoin[4] = { 0xf9, 0xbe, 0xb4, 0xd9 };
-static unsigned char pchMessageStartEbicoin[4] = { 0xe6, 0xe8, 0xe9, 0xe5 };
-static unsigned int nMessageStartSwitchTime = 1347300000;
+// Ebicoin message start
+static unsigned char pchMessageStartEbicoin[4] = { 0xec, 0xca, 0xeb, 0xe1 };
 
-unsigned char pchMessageStart[4] = { 0xe6, 0xe8, 0xe9, 0xe5 };
+unsigned char pchMessageStart[4] = { 0xec, 0xca, 0xeb, 0xe1 };
 
 void GetMessageStart(unsigned char pchMessageStart[], bool fPersistent)
 {
     if (fTestNet)
-        memcpy(pchMessageStart, (fPersistent || GetAdjustedTime() > nMessageStartTestSwitchTime)? pchMessageStartTestNew : pchMessageStartTestOld, sizeof(pchMessageStartTestNew));
+        memcpy(pchMessageStart, pchMessageStartTest, sizeof(pchMessageStartTest));
     else
-        memcpy(pchMessageStart, (fPersistent || GetAdjustedTime() > nMessageStartSwitchTime)? pchMessageStartEbicoin : pchMessageStartBitcoin, sizeof(pchMessageStartEbicoin));
+        memcpy(pchMessageStart, pchMessageStartEbicoin, sizeof(pchMessageStartEbicoin));
 }
 
 static const char* ppszTypeName[] =
