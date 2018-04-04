@@ -61,15 +61,21 @@ static const unsigned int MEMPOOL_HEIGHT = 0x7FFFFFFF;
 /** No amount larger than this (in satoshi) is valid */
 static const int64 MAX_MONEY = 40000000000 * COIN;
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
-static const int64 MIN_TX_FEE = CENT;
-static const int64 MIN_RELAY_TX_FEE = CENT;
-static const int64 MAX_MINT_PROOF_OF_WORK = 100000 * COIN;
+static const int64 MIN_TX_FEE = 100;
+static const int64 MIN_RELAY_TX_FEE = 100;
 static const int64 MIN_TXOUT_AMOUNT = MIN_TX_FEE;
+
+static const unsigned int POW_HALF_REWARD_BLOCK_HEIGHT = 1000;
+static const unsigned int POW_MAX_REWARD_BLOCK_HEIGHT = 7000;
+static const unsigned int POW_REWARD_DECREASE_TARGET_BLOCK_HEIGHT = 1576800;
+static const int64 POW_MAX_REWARD = 1000 * COIN;
+static const int64 POW_REWARD_DECREASE_TO = 500 * COIN;
+
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY_TAKO = 90;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const int STAKE_TARGET_SPACING = 80; // 80-second block spacing 
-static const int STAKE_MIN_AGE = 60 * 60 * 12; // minimum age for coin age (12 hours)
+static const int STAKE_MIN_AGE = 60 * 60 * 24; // minimum age for coin age (1 day)
 static const int STAKE_MAX_AGE = 60 * 60 * 24 * 30; // stake age of full weight (30 days)
 /** Maximum number of script-checking threads allowed */
 static const int MAX_SCRIPTCHECK_THREADS = 16;

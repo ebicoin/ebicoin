@@ -36,8 +36,8 @@ unsigned int nTransactionsUpdated = 0;
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
 uint256 hashGenesisBlock = hashGenesisBlockOfficial;
-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 18);
-static CBigNum bnInitialHashTarget(~uint256(0) >> 18);
+static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
+static CBigNum bnInitialHashTarget(~uint256(0) >> 21);
 unsigned int nStakeMinAge = STAKE_MIN_AGE;
 int nCoinbaseMaturity = COINBASE_MATURITY_TAKO;
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -1121,42 +1121,39 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
     return pblock->GetHash();
 }
 
-int64 GetProofOfWorkReward(unsigned int nBits)
+// ebicoin: Proof-of-Work reward will be determined as follows:
+//
+//           Block       0 - 1000    :      0 TAKO
+//                    1000 - 7000    :    500 TAKO
+//                    7000 - 1576800 :  1,000 TAKO ~ 500 TAKO (decreasing)
+//                 1576800 -         :    500 TAKO
+//
+int64 GetProofOfWorkReward(unsigned int nPrevHeight)
 {
-    CBigNum bnSubsidyLimit = MAX_MINT_PROOF_OF_WORK;
-    CBigNum bnTarget;
-    bnTarget.SetCompact(nBits);
-    CBigNum bnTargetLimit = bnProofOfWorkLimit;
-    bnTargetLimit.SetCompact(bnTargetLimit.GetCompact());
+    static unsigned int nPOWRewardDecreaseBlockCount = (POW_REWARD_DECREASE_TARGET_BLOCK_HEIGHT - POW_MAX_REWARD_BLOCK_HEIGHT);
+    static int64 nPOWRewardDecreaseWidth = (POW_MAX_REWARD - POW_REWARD_DECREASE_TO);
 
-    // ppcoin: subsidy is cut in half every 16x multiply of difficulty
-    // A reasonably continuous curve is used to avoid shock to market
-    // (nSubsidyLimit / nSubsidy) ** 4 == bnProofOfWorkLimit / bnTarget
-    CBigNum bnLowerBound = CENT;
-    CBigNum bnUpperBound = bnSubsidyLimit;
-    while (bnLowerBound + CENT <= bnUpperBound)
-    {
-        CBigNum bnMidValue = (bnLowerBound + bnUpperBound) / 2;
-        if (fDebug && GetBoolArg("-printcreation"))
-            printf("GetProofOfWorkReward() : lower=%" PRI64d" upper=%" PRI64d" mid=%" PRI64d"\n", bnLowerBound.getuint64(), bnUpperBound.getuint64(), bnMidValue.getuint64());
-        if (bnMidValue * bnMidValue * bnMidValue * bnMidValue * bnTargetLimit > bnSubsidyLimit * bnSubsidyLimit * bnSubsidyLimit * bnSubsidyLimit * bnTarget)
-            bnUpperBound = bnMidValue;
-        else
-            bnLowerBound = bnMidValue;
-    }
+    int64 nSubsidy;
 
-    int64 nSubsidy = bnUpperBound.getuint64();
-    nSubsidy = (nSubsidy / CENT) * CENT;
+    if (nPrevHeight < POW_HALF_REWARD_BLOCK_HEIGHT)
+        nSubsidy = 0;
+    else if (nPrevHeight < POW_MAX_REWARD_BLOCK_HEIGHT)
+        nSubsidy = POW_MAX_REWARD / 2;
+    else if (nPrevHeight < POW_REWARD_DECREASE_TARGET_BLOCK_HEIGHT)
+        nSubsidy = POW_MAX_REWARD - nPOWRewardDecreaseWidth * (nPrevHeight - POW_MAX_REWARD_BLOCK_HEIGHT) / nPOWRewardDecreaseBlockCount;
+    else
+        nSubsidy = POW_REWARD_DECREASE_TO;
+
     if (fDebug && GetBoolArg("-printcreation"))
-        printf("GetProofOfWorkReward() : create=%s nBits=0x%08x nSubsidy=%" PRI64d"\n", FormatMoney(nSubsidy).c_str(), nBits, nSubsidy);
+        printf("GetProofOfWorkReward() : create=%s nPrevHeight=%u\n", FormatMoney(nSubsidy).c_str(), nPrevHeight);
 
-    return min(nSubsidy, MAX_MINT_PROOF_OF_WORK);
+    return nSubsidy;
 }
 
 // ppcoin: miner's coin stake is rewarded based on coin age spent (coin-days)
 int64 GetProofOfStakeReward(int64 nCoinAge)
 {
-    static int64 nRewardCoinYear = 10 * CENT;  // creation amount per coin-year
+    static int64 nRewardCoinYear = 8 * CENT;  // creation amount per coin-year
     int64 nSubsidy = nCoinAge * 33 / (365 * 33 + 8) * nRewardCoinYear;
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%" PRI64d"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
@@ -2398,10 +2395,10 @@ bool CBlock::CheckBlock(CValidationState &state, bool fCheckPOW, bool fCheckMerk
         return state.DoS(50, error("CheckBlock() : coinstake timestamp violation nTimeBlock=%" PRI64u" nTimeTx=%u", GetBlockTime(), vtx[1].nTime));
 
     // Check coinbase reward
-    if (vtx[0].GetValueOut() > (IsProofOfWork()? (GetProofOfWorkReward(nBits) - vtx[0].GetMinFee() + MIN_TX_FEE) : 0))
+    if (vtx[0].GetValueOut() > (IsProofOfWork()? (GetProofOfWorkReward(pindexBest->nHeight) - vtx[0].GetMinFee() + MIN_TX_FEE) : 0))
         return state.DoS(50, error("CheckBlock() : coinbase reward exceeded %s > %s", 
                    FormatMoney(vtx[0].GetValueOut()).c_str(),
-                   FormatMoney(IsProofOfWork()? GetProofOfWorkReward(nBits) : 0).c_str()));
+                   FormatMoney(IsProofOfWork()? GetProofOfWorkReward(pindexBest->nHeight) : 0).c_str()));
 
     // Check transactions
     BOOST_FOREACH(const CTransaction& tx, vtx)
@@ -3227,21 +3224,11 @@ bool LoadBlockIndex()
 
     if (fTestNet)
     {
-#ifdef TESTING
-        hashGenesisBlock = uint256("00008d0d88095d31f6dbdbcf80f6e51f71adf2be15740301f5e05cc0f3b2d2c0");
-        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 15);
-        nStakeMinAge = 60 * 60 * 24; // test net min age is 1 day
-        nCoinbaseMaturity = 60;
-        bnInitialHashTarget = CBigNum(~uint256(0) >> 15);
-        nModifierInterval = 60 * 20; // test net modifier interval is 20 minutes
-#else
         hashGenesisBlock = hashGenesisBlockTestNet;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 18);
-        nStakeMinAge = 60 * 60 * 24; // test net min age is 1 day
         nCoinbaseMaturity = 60;
         bnInitialHashTarget = CBigNum(~uint256(0) >> 18);
         nModifierInterval = 60 * 20; // test net modifier interval is 20 minutes
-#endif
     }
 
     printf("%s Network: genesis=0x%s nBitsLimit=0x%08x nBitsInitial=0x%08x nStakeMinAge=%d nCoinbaseMaturity=%d nModifierInterval=%d\n",
@@ -5086,7 +5073,7 @@ CBlockTemplate* CreateNewBlock(CReserveKey& reservekey, CWallet* pwallet, bool f
             printf("CreateNewBlock(): total size %" PRI64u"\n", nBlockSize);
 
         if (pblock->IsProofOfWork())
-            pblock->vtx[0].vout[0].nValue = GetProofOfWorkReward(pblock->nBits);
+            pblock->vtx[0].vout[0].nValue = GetProofOfWorkReward(pindexPrev->nHeight);
         pblocktemplate->vTxFees[0] = -nFees;
 
         // Fill in header
