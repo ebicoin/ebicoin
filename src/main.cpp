@@ -2209,7 +2209,7 @@ bool CBlock::AddToBlockIndex(CValidationState &state, const CDiskBlockPos &pos)
     pindexNew->SetStakeModifier(nStakeModifier, fGeneratedStakeModifier);
     pindexNew->nStakeModifierChecksum = GetStakeModifierChecksum(pindexNew);
     if (!CheckStakeModifierCheckpoints(pindexNew->nHeight, pindexNew->nStakeModifierChecksum))
-        return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016" PRI64x, pindexNew->nHeight, nStakeModifier);
+        return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016" PRI64x ", checksum=0x%08x", pindexNew->nHeight, nStakeModifier, pindexNew->nStakeModifierChecksum);
 
     // ppcoin: remember stake
     if (pindexNew->IsProofOfStake())
@@ -3076,7 +3076,7 @@ bool static LoadBlockIndexDB()
         // ppcoin: calculate stake modifier checksum
         pindex->nStakeModifierChecksum = GetStakeModifierChecksum(pindex);
         if (!CheckStakeModifierCheckpoints(pindex->nHeight, pindex->nStakeModifierChecksum))
-            return error("LoadBlockIndexDB() : Failed stake modifier checkpoint height=%d, modifier=0x%016" PRI64x, pindex->nHeight, pindex->nStakeModifier);
+            return error("LoadBlockIndexDB() : Failed stake modifier checkpoint height=%d, modifier=0x%016" PRI64x ", checksum=0x%08x", pindex->nHeight, pindex->nStakeModifier, pindex->nStakeModifierChecksum);
 
         pindex->nChainTx = (pindex->pprev ? pindex->pprev->nChainTx : 0) + pindex->nTx;
         if ((pindex->nStatus & BLOCK_VALID_MASK) >= BLOCK_VALID_TRANSACTIONS && !(pindex->nStatus & BLOCK_FAILED_MASK))
