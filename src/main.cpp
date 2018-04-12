@@ -3268,7 +3268,7 @@ bool InitBlockIndex() {
         // Genesis block
         const char* pszTimestamp = "I AM A SHRIMP. (EBI(KANI(TAKO))) -- 2018/03/30";
         CTransaction txNew;
-        txNew.nTime = 1345083810;
+        txNew.nTime = 1523564189;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(9999) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -3278,14 +3278,14 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1522877936;
+        block.nTime    = 1523564189;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 81293325;
+        block.nNonce   = 14289;
 
         if (fTestNet)
         {
-            block.nTime    = 1522877936;
-            block.nNonce   = 204195207;
+            block.nTime    = 1523564189;
+            block.nNonce   = 10042109;
         }
 
 #ifdef TESTING
@@ -3305,7 +3305,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x0af97545ff92a7f0a5b3d3203577cd0622ffe116636becede2e65ba7c777059d"));
+        assert(block.hashMerkleRoot == uint256("0x11708fd980e611166b853a986516d1ae223f89a64f58f6fc757f9d93c05a564a"));
 
         // If genesis block hash does not match, then generate new genesis hash.
         if (false && hash != hashGenesisBlock)
