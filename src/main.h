@@ -69,6 +69,8 @@ static const int64 MIN_TXOUT_AMOUNT = MIN_TX_FEE;
 static const unsigned int POW_HALF_REWARD_BLOCK_HEIGHT = 1000;
 static const unsigned int POW_MAX_REWARD_BLOCK_HEIGHT = 7000;
 static const unsigned int POW_REWARD_DECREASE_TARGET_BLOCK_HEIGHT = 1576800;
+
+static const int64 POW_INITIAL_REWARD = COIN; // do not set to zero because initial zero rewards can cause Proof-of-Stake bugs
 static const int64 POW_MAX_REWARD = 1000 * COIN;
 static const int64 POW_REWARD_DECREASE_TO = 500 * COIN;
 

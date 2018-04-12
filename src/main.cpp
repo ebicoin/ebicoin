@@ -1124,7 +1124,7 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 // ebicoin: Proof-of-Work reward will be determined as follows:
 //
-//           Block       0 - 1000    :      0 TAKO
+//           Block       0 - 1000    :      1 TAKO
 //                    1000 - 7000    :    500 TAKO
 //                    7000 - 1576800 :  1,000 TAKO ~ 500 TAKO (decreasing)
 //                 1576800 -         :    500 TAKO
@@ -1137,7 +1137,7 @@ int64 GetProofOfWorkReward(unsigned int nPrevHeight)
     int64 nSubsidy;
 
     if (nPrevHeight < POW_HALF_REWARD_BLOCK_HEIGHT)
-        nSubsidy = 0;
+        nSubsidy = POW_INITIAL_REWARD;
     else if (nPrevHeight < POW_MAX_REWARD_BLOCK_HEIGHT)
         nSubsidy = POW_MAX_REWARD / 2;
     else if (nPrevHeight < POW_REWARD_DECREASE_TARGET_BLOCK_HEIGHT)
