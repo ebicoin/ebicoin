@@ -37,8 +37,10 @@ unsigned int nTransactionsUpdated = 0;
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
 uint256 hashGenesisBlock = hashGenesisBlockOfficial;
-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 18);
-static CBigNum bnInitialHashTarget(~uint256(0) >> 19);
+static CBigNum bnProofOfWorkLimit(~uint256(0) >> 17);
+static CBigNum bnProofOfWorkInitialTarget(~uint256(0) >> 19);
+static CBigNum bnProofOfStakeLimit(~uint256(0) >> 10);
+static CBigNum bnProofOfStakeInitialTarget(~uint256(0) >> 10);
 unsigned int nStakeMinAge = STAKE_MIN_AGE;
 int nCoinbaseMaturity = COINBASE_MATURITY_TAKO;
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -1194,19 +1196,23 @@ static const int64 nTargetSpacingWorkMax = 12 * STAKE_TARGET_SPACING; // 16-minu
 // minimum amount of work that could possibly be required nTime after
 // minimum work required was nBase
 //
-unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
+unsigned int ComputeMinWork(unsigned int nBase, int64 nTime, bool fProofOfStake)
 {
     CBigNum bnResult;
     bnResult.SetCompact(nBase);
     bnResult *= 2;
-    while (nTime > 0 && bnResult < bnProofOfWorkLimit)
+
+    CBigNum bnLimit(fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit);
+    while (nTime > 0 && bnResult < bnLimit)
     {
         // Maximum 200% adjustment per day...
         bnResult *= 2;
         nTime -= 24 * 60 * 60;
     }
-    if (bnResult > bnProofOfWorkLimit)
-        bnResult = bnProofOfWorkLimit;
+
+    if (bnResult > bnLimit)
+        bnResult = bnLimit;
+
     return bnResult.GetCompact();
 }
 
@@ -1224,15 +1230,17 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
 unsigned int static GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 #endif
 {
+    CBigNum bnLimit(fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit);
+
     if (pindexLast == NULL)
-        return bnProofOfWorkLimit.GetCompact(); // genesis block
+        return bnLimit.GetCompact(); // genesis block
 
     const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
     if (pindexPrev->pprev == NULL)
-        return bnInitialHashTarget.GetCompact(); // first block
+        return (fProofOfStake ? bnProofOfStakeInitialTarget : bnProofOfWorkInitialTarget).GetCompact(); // first block
     const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
     if (pindexPrevPrev->pprev == NULL)
-        return bnInitialHashTarget.GetCompact(); // second block
+        return (fProofOfStake ? bnProofOfStakeInitialTarget : bnProofOfWorkInitialTarget).GetCompact(); // second block
 
     int64 nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
 
@@ -1245,8 +1253,8 @@ unsigned int static GetNextTargetRequired(const CBlockIndex* pindexLast, bool fP
     bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
     bnNew /= ((nInterval + 1) * nTargetSpacing);
 
-    if (bnNew > bnProofOfWorkLimit)
-        bnNew = bnProofOfWorkLimit;
+    if (bnNew > bnLimit)
+        bnNew = bnLimit;
 
     return bnNew.GetCompact();
 }
@@ -2631,7 +2639,7 @@ bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBl
         CBigNum bnNewBlock;
         bnNewBlock.SetCompact(pblock->nBits);
         CBigNum bnRequired;
-        bnRequired.SetCompact(ComputeMinWork(GetLastBlockIndex(pcheckpoint, pblock->IsProofOfStake())->nBits, deltaTime));
+        bnRequired.SetCompact(ComputeMinWork(GetLastBlockIndex(pcheckpoint, pblock->IsProofOfStake())->nBits, deltaTime, pblock->IsProofOfStake()));
 
         if (bnNewBlock > bnRequired)
         {
@@ -3226,14 +3234,14 @@ bool LoadBlockIndex()
     if (fTestNet)
     {
         hashGenesisBlock = hashGenesisBlockTestNet;
-        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 18);
+        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 15);
         nCoinbaseMaturity = 60;
-        bnInitialHashTarget = CBigNum(~uint256(0) >> 18);
+        bnProofOfWorkInitialTarget = CBigNum(~uint256(0) >> 15);
         nModifierInterval = 60 * 20; // test net modifier interval is 20 minutes
     }
 
     printf("%s Network: genesis=0x%s nBitsLimit=0x%08x nBitsInitial=0x%08x nStakeMinAge=%d nCoinbaseMaturity=%d nModifierInterval=%d\n",
-           fTestNet? "Test" : "Ebicoin", hashGenesisBlock.ToString().substr(0, 20).c_str(), bnProofOfWorkLimit.GetCompact(), bnInitialHashTarget.GetCompact(), nStakeMinAge, nCoinbaseMaturity, nModifierInterval);
+           fTestNet? "Test" : "Ebicoin", hashGenesisBlock.ToString().substr(0, 20).c_str(), bnProofOfWorkLimit.GetCompact(), bnProofOfWorkInitialTarget.GetCompact(), nStakeMinAge, nCoinbaseMaturity, nModifierInterval);
 
     //
     // Load block index from databases

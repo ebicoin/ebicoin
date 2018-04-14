@@ -75,7 +75,7 @@ static const int64 POW_MAX_REWARD = 1000 * COIN;
 static const int64 POW_REWARD_DECREASE_TO = 500 * COIN;
 
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
-static const int COINBASE_MATURITY_TAKO = 90;
+static const int COINBASE_MATURITY_TAKO = 50;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const int STAKE_TARGET_SPACING = 80; // 80-second block spacing 
 static const int STAKE_MIN_AGE = 60 * 60 * 24; // minimum age for coin age (1 day)
@@ -207,7 +207,7 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 int64 GetProofOfWorkReward(unsigned int nBits);
 int64 GetProofOfStakeReward(int64 nCoinAge);
 /** Calculate the minimum amount of work a received block needs, without knowing its direct parent */
-unsigned int ComputeMinWork(unsigned int nBase, int64 nTime);
+unsigned int ComputeMinWork(unsigned int nBase, int64 nTime, bool fProofOfStake);
 /** Get the number of active peers */
 int GetNumBlocksOfPeers();
 /** Check whether we are doing an initial block download (synchronizing from disk or network) */
